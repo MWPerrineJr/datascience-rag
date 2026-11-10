@@ -10,7 +10,7 @@ import streamlit as st
 
 import rag
 
-st.set_page_config(page_title="Data Science Docs Assistant", page_icon="📚", layout="centered")
+st.set_page_config(page_title="Data Science Docs Assistant", layout="centered")
 
 # Streamlit secrets (Community Cloud, or .streamlit/secrets.toml locally) override .env.
 # rag.py's load_dotenv() has already run at import, so copy them in explicitly.
@@ -83,7 +83,7 @@ def render_result(r: dict, details: bool) -> None:
 
 
 # --- Chat ---
-st.title("📚 Data Science Docs Assistant")
+st.title("Data Science Docs Assistant")
 st.caption("Ask about pandas, NumPy, SciPy, scikit-learn, matplotlib or Plotly. Answers cite the reference docs.")
 
 for m in st.session_state.messages:
